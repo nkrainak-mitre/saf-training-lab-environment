@@ -46,10 +46,10 @@ then
     verificationSuccessful=false
     containersMissing="${containersMissing}The \"nginx\" container is missing.\n"
 fi
-if ! echo "${containersRunning}" | grep --silent --extended-regexp 'redhat8'
+if ! echo "${containersRunning}" | grep --silent --extended-regexp 'redhat9'
 then
     verificationSuccessful=false
-    containersMissing="${containersMissing}The \"redhat8\" container is missing.\n"
+    containersMissing="${containersMissing}The \"redhat9\" container is missing.\n"
 fi
 
 echo -e "${HIGH}* MITRE SAF Version:${RSET} ${statusSaf}"
