@@ -10,7 +10,7 @@ on:
 
 jobs:
   gold-image:
-    name: Gold Image NGINX
+    name: Gold Image NGINX (answer key)
     runs-on: ubuntu-24.04
     env:
        # so that we can use InSpec without manually accepting the license
